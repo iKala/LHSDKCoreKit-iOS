@@ -14,7 +14,7 @@
     <a title="LHAPIClient Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">LHSDKCoreKit Docs</a> (100% documented)</p>
+        <p><a href="../index.html">LHSDKCoreKit Docs</a> (61% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -39,10 +39,33 @@
             </ul>
           </li>
           <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/LHAPIError.html">LHAPIError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LHFrontEndAPIError.html">LHFrontEndAPIError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LHURLRequestError.html">LHURLRequestError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LHURLResponseError.html">LHURLResponseError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
             <a href="../Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Protocols/LHSessionProtocol.html">LHSessionProtocol</a>
+                <a href="../Protocols/LHURLRequestProtocol.html">LHURLRequestProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/LHURLResponseProtocol.html">LHURLResponseProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/LHURLSessionProtocol.html">LHURLSessionProtocol</a>
               </li>
             </ul>
           </li>
@@ -54,7 +77,7 @@
             <h1>LHAPIClient</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">LHAPIClient</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">LHURLSessionProtocol</span></code></pre>
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">LHAPIClient</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">LHURLSessionProtocol</span><span class="p">,</span> <span class="kt">LHURLRequestProtocol</span><span class="p">,</span> <span class="kt">LHURLResponseProtocol</span></code></pre>
 
                 </div>
               </div>
@@ -68,6 +91,119 @@ groups of API endpoints.</p>
           <section class="section task-group-section">
             <div class="task-group">
               <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC12LHSDKCoreKit11LHAPIClient4hostCSo5NSURL"></a>
+                    <a name="//apple_ref/swift/Property/host" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC12LHSDKCoreKit11LHAPIClient4hostCSo5NSURL">host</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>API server host URL</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">let</span> <span class="nv">host</span><span class="p">:</span> <span class="kt">NSURL</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC12LHSDKCoreKit11LHAPIClient9endpointsGSaSS_"></a>
+                    <a name="//apple_ref/swift/Property/endpoints" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC12LHSDKCoreKit11LHAPIClient9endpointsGSaSS_">endpoints</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>API endpoint strings</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">endpoints</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC12LHSDKCoreKit11LHAPIClient10APISessionCSo12NSURLSession"></a>
+                    <a name="//apple_ref/swift/Property/APISession" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC12LHSDKCoreKit11LHAPIClient10APISessionCSo12NSURLSession">APISession</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The NSURLSession object for performing a group of related data task</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">lazy</span> <span class="k">var</span> <span class="nv">APISession</span><span class="p">:</span> <span class="kt">NSURLSession</span> <span class="o">=</span> <span class="k">self</span><span class="o">.</span><span class="nf">createURLSession</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC12LHSDKCoreKit11LHAPIClient16createURLSessionFT_CSo12NSURLSession"></a>
+                    <a name="//apple_ref/swift/Method/createURLSession()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC12LHSDKCoreKit11LHAPIClient16createURLSessionFT_CSo12NSURLSession">createURLSession()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Generate an custom NSURLSession object without any dependency</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">createURLSession</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">NSURLSession</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An NSURLSession instance</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
                 <li class="item">
                   <div>
                     <code>
@@ -195,7 +331,7 @@ groups of API endpoints.</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2016 <a class="link" href="https://livehouse.in" target="_blank" rel="external">LIVEhouse.in</a>. All rights reserved. (Last updated: 2016-04-28)</p>
+          <p>&copy; 2016 <a class="link" href="https://livehouse.in" target="_blank" rel="external">LIVEhouse.in</a>. All rights reserved. (Last updated: 2016-05-05)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.6.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

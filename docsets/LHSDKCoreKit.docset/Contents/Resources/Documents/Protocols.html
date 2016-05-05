@@ -13,7 +13,7 @@
     <a title="Protocols  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">LHSDKCoreKit Docs</a> (100% documented)</p>
+        <p><a href="index.html">LHSDKCoreKit Docs</a> (61% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -38,10 +38,33 @@
             </ul>
           </li>
           <li class="nav-group-name">
+            <a href="Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/LHAPIError.html">LHAPIError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/LHFrontEndAPIError.html">LHFrontEndAPIError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/LHURLRequestError.html">LHURLRequestError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/LHURLResponseError.html">LHURLResponseError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
             <a href="Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Protocols/LHSessionProtocol.html">LHSessionProtocol</a>
+                <a href="Protocols/LHURLRequestProtocol.html">LHURLRequestProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/LHURLResponseProtocol.html">LHURLResponseProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/LHURLSessionProtocol.html">LHURLSessionProtocol</a>
               </li>
             </ul>
           </li>
@@ -60,9 +83,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:P12LHSDKCoreKit17LHSessionProtocol"></a>
-                    <a name="//apple_ref/swift/Protocol/LHSessionProtocol" class="dashAnchor"></a>
-                    <a class="token" href="#/s:P12LHSDKCoreKit17LHSessionProtocol">LHSessionProtocol</a>
+                    <a name="/s:P12LHSDKCoreKit20LHURLRequestProtocol"></a>
+                    <a name="//apple_ref/swift/Protocol/LHURLRequestProtocol" class="dashAnchor"></a>
+                    <a class="token" href="#/s:P12LHSDKCoreKit20LHURLRequestProtocol">LHURLRequestProtocol</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -70,15 +93,79 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A type that represent an user identity</p>
+                        <p>A type that support NSURLRequest initialization &amp; serialization</p>
 
-                        <a href="Protocols/LHSessionProtocol.html" class="slightly-smaller">See more</a>
+                        <a href="Protocols/LHURLRequestProtocol.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">LHSessionProtocol</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">protocol</span> <span class="kt">LHURLRequestProtocol</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:P12LHSDKCoreKit21LHURLResponseProtocol"></a>
+                    <a name="//apple_ref/swift/Protocol/LHURLResponseProtocol" class="dashAnchor"></a>
+                    <a class="token" href="#/s:P12LHSDKCoreKit21LHURLResponseProtocol">LHURLResponseProtocol</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A type that support NSURLResponse validation &amp; serialization</p>
+
+                        <a href="Protocols/LHURLResponseProtocol.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">protocol</span> <span class="kt">LHURLResponseProtocol</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:P12LHSDKCoreKit20LHURLSessionProtocol"></a>
+                    <a name="//apple_ref/swift/Protocol/LHURLSessionProtocol" class="dashAnchor"></a>
+                    <a class="token" href="#/s:P12LHSDKCoreKit20LHURLSessionProtocol">LHURLSessionProtocol</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A type that support NSURLSession initialization</p>
+
+                        <a href="Protocols/LHURLSessionProtocol.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">protocol</span> <span class="kt">LHURLSessionProtocol</span></code></pre>
 
                         </div>
                       </div>
@@ -90,7 +177,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2016 <a class="link" href="https://livehouse.in" target="_blank" rel="external">LIVEhouse.in</a>. All rights reserved. (Last updated: 2016-04-28)</p>
+          <p>&copy; 2016 <a class="link" href="https://livehouse.in" target="_blank" rel="external">LIVEhouse.in</a>. All rights reserved. (Last updated: 2016-05-05)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.6.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
