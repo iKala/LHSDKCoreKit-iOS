@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>LHFrontEndAPIError Enum Reference</title>
+    <title>LHMessageAPIError Enum Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/swift/Enum/LHFrontEndAPIError" class="dashAnchor"></a>
-    <a title="LHFrontEndAPIError Enum Reference"></a>
+    <a name="//apple_ref/swift/Enum/LHMessageAPIError" class="dashAnchor"></a>
+    <a title="LHMessageAPIError Enum Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">LHSDKCoreKit Docs</a> (100% documented)</p>
@@ -21,7 +21,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">LHSDKCoreKit Reference</a>
         <img id="carat" src="../img/carat.png" />
-        LHFrontEndAPIError Enum Reference
+        LHMessageAPIError Enum Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -88,14 +88,14 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>LHFrontEndAPIError</h1>
+            <h1>LHMessageAPIError</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="kd">enum</span> <span class="kt">LHFrontEndAPIError</span><span class="p">:</span> <span class="kt">ErrorType</span></code></pre>
+                  <pre class="highlight"><code><span class="kd">enum</span> <span class="kt">LHMessageAPIError</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">ErrorType</span></code></pre>
 
                 </div>
               </div>
-            <p><code><a href="../Classes/LHFrontEndAPIClient.html">LHFrontEndAPIClient</a></code> error.</p>
+            <p><code><a href="../Classes/LHMessageAPIClient.html">LHMessageAPIClient</a></code> error.</p>
 
           </section>
           <section class="section task-group-section">
@@ -104,9 +104,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FO12LHSDKCoreKit18LHFrontEndAPIError20UnsuccessfulResponseFMS0_S0_"></a>
-                    <a name="//apple_ref/swift/Element/UnsuccessfulResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FO12LHSDKCoreKit18LHFrontEndAPIError20UnsuccessfulResponseFMS0_S0_">UnsuccessfulResponse</a>
+                    <a name="/s:FO12LHSDKCoreKit17LHMessageAPIError12UnauthorizedFMS0_S0_"></a>
+                    <a name="//apple_ref/swift/Element/Unauthorized" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO12LHSDKCoreKit17LHMessageAPIError12UnauthorizedFMS0_S0_">Unauthorized</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -114,14 +114,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>HTTP status is not 200.</p>
+                        <p>User identity authentication failure, please provide the correct user session.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">UnsuccessfulResponse</span></code></pre>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">Unauthorized</span> <span class="o">=</span> <span class="s">"UnauthorizedError"</span></code></pre>
 
                         </div>
                       </div>
@@ -135,9 +135,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FO12LHSDKCoreKit18LHFrontEndAPIError15UserNotSignedInFMS0_S0_"></a>
-                    <a name="//apple_ref/swift/Element/UserNotSignedIn" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FO12LHSDKCoreKit18LHFrontEndAPIError15UserNotSignedInFMS0_S0_">UserNotSignedIn</a>
+                    <a name="/s:FO12LHSDKCoreKit17LHMessageAPIError19PermissionViolationFMS0_S0_"></a>
+                    <a name="//apple_ref/swift/Element/PermissionViolation" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO12LHSDKCoreKit17LHMessageAPIError19PermissionViolationFMS0_S0_">PermissionViolation</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -145,14 +145,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Log in required.</p>
+                        <p>User has no permission to perform request.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">UserNotSignedIn</span></code></pre>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">PermissionViolation</span> <span class="o">=</span> <span class="s">"PermissionViolationError"</span></code></pre>
 
                         </div>
                       </div>
@@ -166,9 +166,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FO12LHSDKCoreKit18LHFrontEndAPIError26UserSessionAndIDNotMatchedFMS0_S0_"></a>
-                    <a name="//apple_ref/swift/Element/UserSessionAndIDNotMatched" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FO12LHSDKCoreKit18LHFrontEndAPIError26UserSessionAndIDNotMatchedFMS0_S0_">UserSessionAndIDNotMatched</a>
+                    <a name="/s:FO12LHSDKCoreKit17LHMessageAPIError14EntityNotFoundFMS0_S0_"></a>
+                    <a name="//apple_ref/swift/Element/EntityNotFound" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO12LHSDKCoreKit17LHMessageAPIError14EntityNotFoundFMS0_S0_">EntityNotFound</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -176,14 +176,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Provided session &amp; ID not match.</p>
+                        <p>No entity is available for the given parameters.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">UserSessionAndIDNotMatched</span></code></pre>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">EntityNotFound</span> <span class="o">=</span> <span class="s">"EntityNotFoundError"</span></code></pre>
 
                         </div>
                       </div>
@@ -197,9 +197,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FO12LHSDKCoreKit18LHFrontEndAPIError18UserSessionExpiredFMS0_S0_"></a>
-                    <a name="//apple_ref/swift/Element/UserSessionExpired" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FO12LHSDKCoreKit18LHFrontEndAPIError18UserSessionExpiredFMS0_S0_">UserSessionExpired</a>
+                    <a name="/s:FO12LHSDKCoreKit17LHMessageAPIError15DuplicateEntityFMS0_S0_"></a>
+                    <a name="//apple_ref/swift/Element/DuplicateEntity" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO12LHSDKCoreKit17LHMessageAPIError15DuplicateEntityFMS0_S0_">DuplicateEntity</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -207,14 +207,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>User session expired, need to log in again.</p>
+                        <p>Entity already exists.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">UserSessionExpired</span></code></pre>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">DuplicateEntity</span> <span class="o">=</span> <span class="s">"DuplicateEntityError"</span></code></pre>
 
                         </div>
                       </div>
@@ -228,9 +228,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FO12LHSDKCoreKit18LHFrontEndAPIError17IncorrectPasscodeFMS0_S0_"></a>
-                    <a name="//apple_ref/swift/Element/IncorrectPasscode" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FO12LHSDKCoreKit18LHFrontEndAPIError17IncorrectPasscodeFMS0_S0_">IncorrectPasscode</a>
+                    <a name="/s:FO12LHSDKCoreKit17LHMessageAPIError14InvalidRequestFMS0_S0_"></a>
+                    <a name="//apple_ref/swift/Element/InvalidRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO12LHSDKCoreKit17LHMessageAPIError14InvalidRequestFMS0_S0_">InvalidRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -238,14 +238,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Payment passcode is wrong.</p>
+                        <p>Invalid API token or parameters.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">IncorrectPasscode</span></code></pre>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">InvalidRequest</span> <span class="o">=</span> <span class="s">"InvalidRequestError"</span></code></pre>
 
                         </div>
                       </div>
@@ -259,9 +259,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FO12LHSDKCoreKit18LHFrontEndAPIError20ContinueRegistrationFMS0_S0_"></a>
-                    <a name="//apple_ref/swift/Element/ContinueRegistration" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FO12LHSDKCoreKit18LHFrontEndAPIError20ContinueRegistrationFMS0_S0_">ContinueRegistration</a>
+                    <a name="/s:FO12LHSDKCoreKit17LHMessageAPIError17ServerSideFailureFMS0_S0_"></a>
+                    <a name="//apple_ref/swift/Element/ServerSideFailure" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO12LHSDKCoreKit17LHMessageAPIError17ServerSideFailureFMS0_S0_">ServerSideFailure</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -269,45 +269,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Allow to continue Facebook log in process.</p>
+                        <p>The service has trouble getting data.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">ContinueRegistration</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:FO12LHSDKCoreKit18LHFrontEndAPIError11UserBlockedFMS0_S0_"></a>
-                    <a name="//apple_ref/swift/Element/UserBlocked" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FO12LHSDKCoreKit18LHFrontEndAPIError11UserBlockedFMS0_S0_">UserBlocked</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Not allow to continue Facebook log in because user blocked.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">UserBlocked</span></code></pre>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">ServerSideFailure</span> <span class="o">=</span> <span class="s">"DataAccessError"</span></code></pre>
 
                         </div>
                       </div>

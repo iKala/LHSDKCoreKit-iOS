@@ -14,7 +14,7 @@
     <a title="LHAPIClient Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">LHSDKCoreKit Docs</a> (61% documented)</p>
+        <p><a href="../index.html">LHSDKCoreKit Docs</a> (100% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -36,6 +36,9 @@
               <li class="nav-group-task">
                 <a href="../Classes/LHFrontEndAPIClient.html">LHFrontEndAPIClient</a>
               </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LHMessageAPIClient.html">LHMessageAPIClient</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -48,10 +51,21 @@
                 <a href="../Enums/LHFrontEndAPIError.html">LHFrontEndAPIError</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Enums/LHMessageAPIError.html">LHMessageAPIError</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Enums/LHURLRequestError.html">LHURLRequestError</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/LHURLResponseError.html">LHURLResponseError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/ErrorType.html">ErrorType</a>
               </li>
             </ul>
           </li>
@@ -81,10 +95,10 @@
 
                 </div>
               </div>
-            <p>Base class for LIVEhouse.in API</p>
+            <p>Base class for LIVEhouse.in API.</p>
 
-<p>LHAPIClient provided the basic functionality of an API client, and preserve the flexibility to
-extend the API client. With this class, we constructed serveral API client module for different
+<p><code>LHAPIClient</code> provided the basic functionality of an API client, and preserve the flexibility to
+extend the API client. With this class, we constructed serveral API client modules for different
 groups of API endpoints.</p>
 
           </section>
@@ -104,7 +118,7 @@ groups of API endpoints.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>API server host URL</p>
+                        <p>API server host URL.</p>
 
                       </div>
                       <div class="declaration">
@@ -131,7 +145,7 @@ groups of API endpoints.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>API endpoint strings</p>
+                        <p>API endpoint strings.</p>
 
                       </div>
                       <div class="declaration">
@@ -158,7 +172,7 @@ groups of API endpoints.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The NSURLSession object for performing a group of related data task</p>
+                        <p>The <code>NSURLSession</code> object for performing a group of related data task.</p>
 
                       </div>
                       <div class="declaration">
@@ -185,7 +199,7 @@ groups of API endpoints.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Generate an custom NSURLSession object without any dependency</p>
+                        <p>Generate an custom <code>NSURLSession</code> object without any dependency.</p>
 
                       </div>
                       <div class="declaration">
@@ -198,7 +212,7 @@ groups of API endpoints.</p>
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>An NSURLSession instance</p>
+                        <p>An <code>NSURLSession</code> instance.</p>
 
                       </div>
                     </section>
@@ -217,7 +231,7 @@ groups of API endpoints.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Create an API client with specific host server URL</p>
+                        <p>Create an API client with specific host server URL.</p>
 
                       </div>
                       <div class="declaration">
@@ -240,7 +254,7 @@ groups of API endpoints.</p>
                               </td>
                               <td>
                                 <div>
-                                  <p>The host URL</p>
+                                  <p>The host URL.</p>
 
                                 </div>
                               </td>
@@ -264,7 +278,7 @@ groups of API endpoints.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Send an HTTP/HTTPS API request asynchronously with handlers</p>
+                        <p>Send an HTTP/HTTPS API request asynchronously with handlers.</p>
 
                       </div>
                       <div class="declaration">
@@ -289,7 +303,7 @@ groups of API endpoints.</p>
                               </td>
                               <td>
                                 <div>
-                                  <p>An NSURLRequest to be send</p>
+                                  <p>An <code>NSURLRequest</code> to be send.</p>
 
                                 </div>
                               </td>
@@ -302,7 +316,7 @@ groups of API endpoints.</p>
                               </td>
                               <td>
                                 <div>
-                                  <p>Success handler will be triggered if request is complete without error and response metadata is recognized as an NSHTTPURLResponse object.</p>
+                                  <p>Success handler will be triggered if request complete without error and response metadata is recognized as an <code>NSHTTPURLResponse</code> object.</p>
 
                                 </div>
                               </td>
@@ -315,7 +329,7 @@ groups of API endpoints.</p>
                               </td>
                               <td>
                                 <div>
-                                  <p>When request completed with an error or the response metadata is not an NSHTTPURLResponse object, failure handler will be called.</p>
+                                  <p>When request completed with an error or the response metadata is not an <code>NSHTTPURLResponse</code> object, failure handler will be called.</p>
 
                                 </div>
                               </td>
@@ -331,8 +345,8 @@ groups of API endpoints.</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2016 <a class="link" href="https://livehouse.in" target="_blank" rel="external">LIVEhouse.in</a>. All rights reserved. (Last updated: 2016-05-05)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.6.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2016 <a class="link" href="https://livehouse.in" target="_blank" rel="external">LIVEhouse.in</a>. All rights reserved. (Last updated: 2016-06-02)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.6.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

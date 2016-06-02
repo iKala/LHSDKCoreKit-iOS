@@ -14,7 +14,7 @@
     <a title="LHURLResponseProtocol Protocol Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">LHSDKCoreKit Docs</a> (61% documented)</p>
+        <p><a href="../index.html">LHSDKCoreKit Docs</a> (100% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -36,6 +36,9 @@
               <li class="nav-group-task">
                 <a href="../Classes/LHFrontEndAPIClient.html">LHFrontEndAPIClient</a>
               </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LHMessageAPIClient.html">LHMessageAPIClient</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -48,10 +51,21 @@
                 <a href="../Enums/LHFrontEndAPIError.html">LHFrontEndAPIError</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Enums/LHMessageAPIError.html">LHMessageAPIError</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Enums/LHURLRequestError.html">LHURLRequestError</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/LHURLResponseError.html">LHURLResponseError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/ErrorType.html">ErrorType</a>
               </li>
             </ul>
           </li>
@@ -81,7 +95,7 @@
 
                 </div>
               </div>
-            <p>A type that support NSURLResponse validation &amp; serialization</p>
+            <p>A type that support <code>NSURLResponse</code> validation &amp; serialization.</p>
 
           </section>
           <section class="section task-group-section">
@@ -104,11 +118,11 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Decide if further processing is able to be performed for URL response, based on HTTP response
-metadata &amp; data</p>
+metadata &amp; data.</p>
 
 <div class="aside aside-throws">
     <p class="aside-title">Throws</p>
-    <p>An LHAPIError object if validation failed</p>
+    <p>An <code><a href="../Enums/LHAPIError.html">LHAPIError</a></code> object if validation failed.</p>
 
 </div>
 
@@ -116,11 +130,11 @@ metadata &amp; data</p>
                       <h4>Default Implementation</h4>
                       <div class="default_impl abstract">
                         <p>Decide if further processing is able to be performed for URL response, based on HTTP response
-metadata &amp; data</p>
+metadata &amp; data.</p>
 
 <div class="aside aside-throws">
     <p class="aside-title">Throws</p>
-    <p>An LHAPIError object if validation failed</p>
+    <p><code>LHURLResponseError</code> if validation failed.</p>
 
 </div>
 
@@ -145,7 +159,7 @@ metadata &amp; data</p>
                               </td>
                               <td>
                                 <div>
-                                  <p>Response metadata</p>
+                                  <p>Response metadata.</p>
 
                                 </div>
                               </td>
@@ -158,7 +172,7 @@ metadata &amp; data</p>
                               </td>
                               <td>
                                 <div>
-                                  <p>Response data</p>
+                                  <p>Response data.</p>
 
                                 </div>
                               </td>
@@ -185,22 +199,22 @@ metadata &amp; data</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Convert raw response data to JSON object</p>
+                        <p>Convert raw response data to JSON object.</p>
 
 <div class="aside aside-throws">
     <p class="aside-title">Throws</p>
-    <p>An NSError object if error happened during decoding raw JSON data</p>
+    <p>An <code>NSError</code> object if error happened during decoding raw JSON data.</p>
 
 </div>
 
                       </div>
                       <h4>Default Implementation</h4>
                       <div class="default_impl abstract">
-                        <p>Convert raw response data to JSON object</p>
+                        <p>Convert raw response data to JSON object.</p>
 
 <div class="aside aside-throws">
     <p class="aside-title">Throws</p>
-    <p>An NSError object if error happened during decoding raw JSON data</p>
+    <p>An <code>NSError</code> object if error happened during decoding raw JSON data.</p>
 
 </div>
 
@@ -225,7 +239,7 @@ metadata &amp; data</p>
                               </td>
                               <td>
                                 <div>
-                                  <p>Response raw data</p>
+                                  <p>Response raw data.</p>
 
                                 </div>
                               </td>
@@ -235,7 +249,7 @@ metadata &amp; data</p>
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>An LHJSONObject instance</p>
+                        <p>An <code>LHJSONObject</code> instance.</p>
 
                       </div>
                     </section>
@@ -246,8 +260,8 @@ metadata &amp; data</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2016 <a class="link" href="https://livehouse.in" target="_blank" rel="external">LIVEhouse.in</a>. All rights reserved. (Last updated: 2016-05-05)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.6.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2016 <a class="link" href="https://livehouse.in" target="_blank" rel="external">LIVEhouse.in</a>. All rights reserved. (Last updated: 2016-06-02)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.6.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

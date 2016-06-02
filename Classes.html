@@ -13,7 +13,7 @@
     <a title="Classes  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">LHSDKCoreKit Docs</a> (61% documented)</p>
+        <p><a href="index.html">LHSDKCoreKit Docs</a> (100% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -35,6 +35,9 @@
               <li class="nav-group-task">
                 <a href="Classes/LHFrontEndAPIClient.html">LHFrontEndAPIClient</a>
               </li>
+              <li class="nav-group-task">
+                <a href="Classes/LHMessageAPIClient.html">LHMessageAPIClient</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -47,10 +50,21 @@
                 <a href="Enums/LHFrontEndAPIError.html">LHFrontEndAPIError</a>
               </li>
               <li class="nav-group-task">
+                <a href="Enums/LHMessageAPIError.html">LHMessageAPIError</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Enums/LHURLRequestError.html">LHURLRequestError</a>
               </li>
               <li class="nav-group-task">
                 <a href="Enums/LHURLResponseError.html">LHURLResponseError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Extensions/ErrorType.html">ErrorType</a>
               </li>
             </ul>
           </li>
@@ -93,10 +107,10 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Base class for LIVEhouse.in API</p>
+                        <p>Base class for LIVEhouse.in API.</p>
 
-<p>LHAPIClient provided the basic functionality of an API client, and preserve the flexibility to
-extend the API client. With this class, we constructed serveral API client module for different
+<p><code>LHAPIClient</code> provided the basic functionality of an API client, and preserve the flexibility to
+extend the API client. With this class, we constructed serveral API client modules for different
 groups of API endpoints.</p>
 
                         <a href="Classes/LHAPIClient.html" class="slightly-smaller">See more</a>
@@ -129,7 +143,7 @@ groups of API endpoints.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A subclass of LHAPIClient that provides a group of method to perform LIVEhouse.in front end API request.</p>
+                        <p>A subclass of <code><a href="Classes/LHAPIClient.html">LHAPIClient</a></code> that provides a group of methods to perform LIVEhouse.in front end API request.</p>
 
                         <a href="Classes/LHFrontEndAPIClient.html" class="slightly-smaller">See more</a>
                       </div>
@@ -146,11 +160,43 @@ groups of API endpoints.</p>
                 </li>
               </ul>
             </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:C12LHSDKCoreKit18LHMessageAPIClient"></a>
+                    <a name="//apple_ref/swift/Class/LHMessageAPIClient" class="dashAnchor"></a>
+                    <a class="token" href="#/s:C12LHSDKCoreKit18LHMessageAPIClient">LHMessageAPIClient</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A subclass of <code><a href="Classes/LHAPIClient.html">LHAPIClient</a></code> that provides a group of methods to perform LIVEhouse.in messaging service API request.</p>
+
+                        <a href="Classes/LHMessageAPIClient.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">LHMessageAPIClient</span><span class="p">:</span> <span class="kt">LHAPIClient</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2016 <a class="link" href="https://livehouse.in" target="_blank" rel="external">LIVEhouse.in</a>. All rights reserved. (Last updated: 2016-05-05)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.6.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2016 <a class="link" href="https://livehouse.in" target="_blank" rel="external">LIVEhouse.in</a>. All rights reserved. (Last updated: 2016-06-02)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.6.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

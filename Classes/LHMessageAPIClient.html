@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>LHMessageAPIClient Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/LHMessageAPIClient" class="dashAnchor"></a>
+    <a title="LHMessageAPIClient Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">LHSDKCoreKit Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">LHSDKCoreKit Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        LHMessageAPIClient Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/LHAPIClient.html">LHAPIClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LHFrontEndAPIClient.html">LHFrontEndAPIClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LHMessageAPIClient.html">LHMessageAPIClient</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/LHAPIError.html">LHAPIError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LHFrontEndAPIError.html">LHFrontEndAPIError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LHMessageAPIError.html">LHMessageAPIError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LHURLRequestError.html">LHURLRequestError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LHURLResponseError.html">LHURLResponseError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/ErrorType.html">ErrorType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/LHURLRequestProtocol.html">LHURLRequestProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/LHURLResponseProtocol.html">LHURLResponseProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/LHURLSessionProtocol.html">LHURLSessionProtocol</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>LHMessageAPIClient</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">LHMessageAPIClient</span><span class="p">:</span> <span class="kt">LHAPIClient</span></code></pre>
+
+                </div>
+              </div>
+            <p>A subclass of <code><a href="../Classes/LHAPIClient.html">LHAPIClient</a></code> that provides a group of methods to perform LIVEhouse.in messaging service API request.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC12LHSDKCoreKit18LHMessageAPIClient17timeoutForRequestSd"></a>
+                    <a name="//apple_ref/swift/Property/timeoutForRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC12LHSDKCoreKit18LHMessageAPIClient17timeoutForRequestSd">timeoutForRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Timeout interval to be applied on every messaging service API request, default is 5 seconds.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">timeoutForRequest</span><span class="p">:</span> <span class="kt">NSTimeInterval</span> <span class="o">=</span> <span class="mi">5</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC12LHSDKCoreKit18LHMessageAPIClient11userSessionSS"></a>
+                    <a name="//apple_ref/swift/Property/userSession" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC12LHSDKCoreKit18LHMessageAPIClient11userSessionSS">userSession</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Front end user session token.</p>
+
+<p>An valid token string is required for some APIs when API caller has <strong>MASTER privilege</strong>.
+Caller is allowed to complete those requests only with successful authentication.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">userSession</span> <span class="o">=</span> <span class="s">""</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC12LHSDKCoreKit18LHMessageAPIClient14getChatProfileFT10forChannelSS7successFT14rawChatProfileCSo12NSDictionary_T_7failureFT5errorCSo7NSError_T__T_"></a>
+                    <a name="//apple_ref/swift/Method/getChatProfile(forChannel:success:failure:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC12LHSDKCoreKit18LHMessageAPIClient14getChatProfileFT10forChannelSS7successFT14rawChatProfileCSo12NSDictionary_T_7failureFT5errorCSo7NSError_T__T_">getChatProfile(forChannel:success:failure:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets the basic info of the chat room of a channel.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getChatProfile</span><span class="p">(</span><span class="n">forChannel</span> <span class="nv">channelCode</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                               <span class="nv">success</span><span class="p">:</span> <span class="p">(</span><span class="nv">rawChatProfile</span><span class="p">:</span> <span class="kt">NSDictionary</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">(),</span>
+                               <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="nv">error</span><span class="p">:</span> <span class="kt">NSError</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>channelCode</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Hash code of channel.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>success</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Handler for successful API request.</p>
+<p><code>rawChatProfile</code><br> Chat room basic information container.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>failure</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Called when API request fails or error happens.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC12LHSDKCoreKit18LHMessageAPIClient10createChatFT10forChannelSS12actingUserIdSS7successFT6chatIdSS9userTokenSS5labelCSo8NSNumber_T_7failureFT5errorCSo7NSError_T__T_"></a>
+                    <a name="//apple_ref/swift/Method/createChat(forChannel:actingUserId:success:failure:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC12LHSDKCoreKit18LHMessageAPIClient10createChatFT10forChannelSS12actingUserIdSS7successFT6chatIdSS9userTokenSS5labelCSo8NSNumber_T_7failureFT5errorCSo7NSError_T__T_">createChat(forChannel:actingUserId:success:failure:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a chat room for channel.</p>
+
+<p>The user creating the chat is automatically added to the user list of the chat.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createChat</span><span class="p">(</span><span class="n">forChannel</span> <span class="nv">channelCode</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                           <span class="nv">actingUserId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                           <span class="nv">success</span><span class="p">:</span> <span class="p">(</span><span class="nv">chatId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">userToken</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">label</span><span class="p">:</span> <span class="kt">NSNumber</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">(),</span>
+                           <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="nv">error</span><span class="p">:</span> <span class="kt">NSError</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>channelCode</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Hash code of channel.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>actingUserId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The channel hash code of user triggering the operation.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>success</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Handler for successful API request.</p>
+<p><code>chatId</code><br> Chat room identifier.</p>
+<p><code>userToken</code><br> The token of the acting user in the chat room.</p>
+<p><code>label</code><br> The serial number of the acting user in the chat room.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>failure</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Called when API request fails or error happens.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC12LHSDKCoreKit18LHMessageAPIClient7addUserFTCSo12NSDictionary6toChatSS7successFT9userTokenSS5labelCSo8NSNumber4roleSS_T_7failureFT5errorCSo7NSError_T__T_"></a>
+                    <a name="//apple_ref/swift/Method/addUser(_:toChat:success:failure:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC12LHSDKCoreKit18LHMessageAPIClient7addUserFTCSo12NSDictionary6toChatSS7successFT9userTokenSS5labelCSo8NSNumber4roleSS_T_7failureFT5errorCSo7NSError_T__T_">addUser(_:toChat:success:failure:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Add user to a chatroom.</p>
+
+<p>It should be a NSDictionary with exactly one entry.<br>
+Entry key can be <q>userId</q> or <q>name</q>, value is a string.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addUser</span><span class="p">(</span><span class="nv">targetUser</span><span class="p">:</span> <span class="kt">NSDictionary</span><span class="p">,</span>
+                        <span class="n">toChat</span> <span class="nv">chatId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                        <span class="nv">success</span><span class="p">:</span> <span class="p">(</span><span class="nv">userToken</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">label</span><span class="p">:</span> <span class="kt">NSNumber</span><span class="p">,</span> <span class="nv">role</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">(),</span>
+                        <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="nv">error</span><span class="p">:</span> <span class="kt">NSError</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>targetUser</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>User to add.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>chatId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Chat room identifier.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>success</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Handler for successful API request.</p>
+<p><code>userToken</code><br> The token of the user in the chat room.</p>
+<p><code>label</code><br> The serial number of the user in the chat room.</p>
+<p><code>role</code><br> User privilege level.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>failure</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Called when API request fails or error happens.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC12LHSDKCoreKit18LHMessageAPIClient8getUsersFT6byChatSS9userTokenSS5countSi6offsetSi7successFT8rawUsersCSo7NSArray_T_7failureFT5errorCSo7NSError_T__T_"></a>
+                    <a name="//apple_ref/swift/Method/getUsers(byChat:userToken:count:offset:success:failure:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC12LHSDKCoreKit18LHMessageAPIClient8getUsersFT6byChatSS9userTokenSS5countSi6offsetSi7successFT8rawUsersCSo7NSArray_T_7failureFT5errorCSo7NSError_T__T_">getUsers(byChat:userToken:count:offset:success:failure:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get a list of users in chat room (support pagination).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getUsers</span><span class="p">(</span><span class="n">byChat</span> <span class="nv">chatId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                         <span class="nv">userToken</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                         <span class="nv">count</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">200</span><span class="p">,</span>
+                         <span class="nv">offset</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+                         <span class="nv">success</span><span class="p">:</span> <span class="p">(</span><span class="nv">rawUsers</span><span class="p">:</span> <span class="kt">NSArray</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">(),</span>
+                         <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="nv">error</span><span class="p">:</span> <span class="kt">NSError</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>chatId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Chat room identifier.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>userToken</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The token of user make the request.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>count</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Max number of result.<br> Valid range is 0~200. Default value is 200.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>offset</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Shift amount of result.<br> Can not be negative value.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>success</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Handler for successful API request.</p>
+<p><code>rawUser</code><br> User list container.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>failure</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Called when API request fails or error happens.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC12LHSDKCoreKit18LHMessageAPIClient11getMessagesFT6byChatSS9userTokenSS5countSi6offsetSi7successFT11rawMessagesCSo7NSArray_T_7failureFT5errorCSo7NSError_T__T_"></a>
+                    <a name="//apple_ref/swift/Method/getMessages(byChat:userToken:count:offset:success:failure:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC12LHSDKCoreKit18LHMessageAPIClient11getMessagesFT6byChatSS9userTokenSS5countSi6offsetSi7successFT11rawMessagesCSo7NSArray_T_7failureFT5errorCSo7NSError_T__T_">getMessages(byChat:userToken:count:offset:success:failure:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get messages in a chat room (support pagination).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getMessages</span><span class="p">(</span><span class="n">byChat</span> <span class="nv">chatId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                            <span class="nv">userToken</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                            <span class="nv">count</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span>
+                            <span class="nv">offset</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+                            <span class="nv">success</span><span class="p">:</span> <span class="p">(</span><span class="nv">rawMessages</span><span class="p">:</span> <span class="kt">NSArray</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">(),</span>
+                            <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="nv">error</span><span class="p">:</span> <span class="kt">NSError</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>chatId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Chat room identifier.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>userToken</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The token of user make the request.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>count</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Max number of result.<br> Valid range is 0~100. Default value is 100.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>offset</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Shift amount of result.<br> Can not be negative value.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>success</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Handler for successful API request.</p>
+<p><code>rawMessages</code><br> Messages list container.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>failure</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Called when API request fails or error happens.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC12LHSDKCoreKit18LHMessageAPIClient8getUsersFT8byLabelsGSaSi_8fromChatSS9userTokenSS7successFT8rawUsersCSo7NSArray_T_7failureFT5errorCSo7NSError_T__T_"></a>
+                    <a name="//apple_ref/swift/Method/getUsers(byLabels:fromChat:userToken:success:failure:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC12LHSDKCoreKit18LHMessageAPIClient8getUsersFT8byLabelsGSaSi_8fromChatSS9userTokenSS7successFT8rawUsersCSo7NSArray_T_7failureFT5errorCSo7NSError_T__T_">getUsers(byLabels:fromChat:userToken:success:failure:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get a list of users in chat room based on given labels.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getUsers</span><span class="p">(</span><span class="n">byLabels</span> <span class="nv">targetUserLabels</span><span class="p">:</span> <span class="p">[</span><span class="kt">Int</span><span class="p">],</span>
+                         <span class="n">fromChat</span> <span class="nv">chatId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                         <span class="nv">userToken</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                         <span class="nv">success</span><span class="p">:</span> <span class="p">(</span><span class="nv">rawUsers</span><span class="p">:</span> <span class="kt">NSArray</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">(),</span>
+                         <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="nv">error</span><span class="p">:</span> <span class="kt">NSError</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>targetUserLabels</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An array of user labels.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>chatId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Chat room identifier.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>userToken</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The token of user make the request.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>success</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Handler for successful API request.</p>
+<p><code>rawUsers</code><br> User list container.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>failure</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Called when API request fails or error happens.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC12LHSDKCoreKit18LHMessageAPIClient11removeUsersFT8byLabelsGSaSi_8fromChatSS9userTokenSS18hasMasterPrivilegeSb7successFT_T_7failureFT5errorCSo7NSError_T__T_"></a>
+                    <a name="//apple_ref/swift/Method/removeUsers(byLabels:fromChat:userToken:hasMasterPrivilege:success:failure:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC12LHSDKCoreKit18LHMessageAPIClient11removeUsersFT8byLabelsGSaSi_8fromChatSS9userTokenSS18hasMasterPrivilegeSb7successFT_T_7failureFT5errorCSo7NSError_T__T_">removeUsers(byLabels:fromChat:userToken:hasMasterPrivilege:success:failure:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Remove users from chat room.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">removeUsers</span><span class="p">(</span><span class="n">byLabels</span> <span class="nv">targetUserLabels</span><span class="p">:</span> <span class="p">[</span><span class="kt">Int</span><span class="p">],</span>
+                            <span class="n">fromChat</span> <span class="nv">chatId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                            <span class="nv">userToken</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                            <span class="nv">hasMasterPrivilege</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span>
+                            <span class="nv">success</span><span class="p">:</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="p">(),</span>
+                            <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="nv">error</span><span class="p">:</span> <span class="kt">NSError</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>targetUserLabels</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An array of user labels.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>chatId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Chat room identifier.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>userToken</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The token of user make the request.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>hasMasterPrivilege</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>If user make the request has master privilege.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>success</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Handler for successful API request.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>failure</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Called when API request fails or error happens.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC12LHSDKCoreKit18LHMessageAPIClient11updateUsersFTCSo7NSArray6inChatSS9userTokenSS18hasMasterPrivilegeSb7successFT_T_7failureFT5errorCSo7NSError_T__T_"></a>
+                    <a name="//apple_ref/swift/Method/updateUsers(_:inChat:userToken:hasMasterPrivilege:success:failure:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC12LHSDKCoreKit18LHMessageAPIClient11updateUsersFTCSo7NSArray6inChatSS9userTokenSS18hasMasterPrivilegeSb7successFT_T_7failureFT5errorCSo7NSError_T__T_">updateUsers(_:inChat:userToken:hasMasterPrivilege:success:failure:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Update users in chat room based on given labels.</p>
+
+<p>This request can update name for guest or role for loged in user.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">updateUsers</span><span class="p">(</span><span class="nv">targetUsers</span><span class="p">:</span> <span class="kt">NSArray</span><span class="p">,</span>
+                            <span class="n">inChat</span> <span class="nv">chatId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                            <span class="nv">userToken</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                            <span class="nv">hasMasterPrivilege</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span>
+                            <span class="nv">success</span><span class="p">:</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="p">(),</span>
+                            <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="nv">error</span><span class="p">:</span> <span class="kt">NSError</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>targetUsers</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An array of user labels.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>chatId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Chat room identifier.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>userToken</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The token of user make the request.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>hasMasterPrivilege</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>If user make the request has master privilege.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>success</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Handler for successful API request.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>failure</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Called when API request fails or error happens.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC12LHSDKCoreKit18LHMessageAPIClient14addUserMessageFTSS6toChatSS9userTokenSS18hasMasterPrivilegeSb7successFT9messageIdSS_T_7failureFT5errorCSo7NSError_T__T_"></a>
+                    <a name="//apple_ref/swift/Method/addUserMessage(_:toChat:userToken:hasMasterPrivilege:success:failure:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC12LHSDKCoreKit18LHMessageAPIClient14addUserMessageFTSS6toChatSS9userTokenSS18hasMasterPrivilegeSb7successFT9messageIdSS_T_7failureFT5errorCSo7NSError_T__T_">addUserMessage(_:toChat:userToken:hasMasterPrivilege:success:failure:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Add a user message into a chat room.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addUserMessage</span><span class="p">(</span><span class="nv">text</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                               <span class="n">toChat</span> <span class="nv">chatId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                               <span class="nv">userToken</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                               <span class="nv">hasMasterPrivilege</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span>
+                               <span class="nv">success</span><span class="p">:</span> <span class="p">(</span><span class="nv">messageId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">(),</span>
+                               <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="nv">error</span><span class="p">:</span> <span class="kt">NSError</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>text</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Message to add.<br> Max length of message is 120. New line and space would be skipped.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>chatId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Chat room identifier.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>userToken</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The token of user make the request.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>hasMasterPrivilege</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>If user make the request has master privilege.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>success</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Handler for successful API request.</p>
+<p><code>messageId</code><br> Message identifier.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>failure</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Called when API request fails or error happens.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC12LHSDKCoreKit18LHMessageAPIClient13removeMessageFTSS8fromChatSS9userTokenSS18hasMasterPrivilegeSb7successFT_T_7failureFT5errorCSo7NSError_T__T_"></a>
+                    <a name="//apple_ref/swift/Method/removeMessage(_:fromChat:userToken:hasMasterPrivilege:success:failure:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC12LHSDKCoreKit18LHMessageAPIClient13removeMessageFTSS8fromChatSS9userTokenSS18hasMasterPrivilegeSb7successFT_T_7failureFT5errorCSo7NSError_T__T_">removeMessage(_:fromChat:userToken:hasMasterPrivilege:success:failure:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Remove a message from a chat room.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">removeMessage</span><span class="p">(</span><span class="nv">messageId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                              <span class="n">fromChat</span> <span class="nv">chatId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                              <span class="nv">userToken</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                              <span class="nv">hasMasterPrivilege</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span>
+                              <span class="nv">success</span><span class="p">:</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="p">(),</span>
+                              <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="nv">error</span><span class="p">:</span> <span class="kt">NSError</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>messageId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Message identifier.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>chatId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Chat room identifier.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>userToken</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The token of user make the request.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>hasMasterPrivilege</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>If user make the request has master privilege.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>success</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Handler for successful API request.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>failure</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Called when API request fails or error happens.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2016 <a class="link" href="https://livehouse.in" target="_blank" rel="external">LIVEhouse.in</a>. All rights reserved. (Last updated: 2016-06-02)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.6.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

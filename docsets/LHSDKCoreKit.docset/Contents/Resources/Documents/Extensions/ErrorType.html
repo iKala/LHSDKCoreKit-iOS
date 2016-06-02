@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>LHURLSessionProtocol Protocol Reference</title>
+    <title>ErrorType Extension Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/swift/Protocol/LHURLSessionProtocol" class="dashAnchor"></a>
-    <a title="LHURLSessionProtocol Protocol Reference"></a>
+    <a name="//apple_ref/swift/Extension/ErrorType" class="dashAnchor"></a>
+    <a title="ErrorType Extension Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">LHSDKCoreKit Docs</a> (100% documented)</p>
@@ -21,7 +21,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">LHSDKCoreKit Reference</a>
         <img id="carat" src="../img/carat.png" />
-        LHURLSessionProtocol Protocol Reference
+        ErrorType Extension Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -88,15 +88,14 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>LHURLSessionProtocol</h1>
+            <h1>ErrorType</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="kd">protocol</span> <span class="kt">LHURLSessionProtocol</span></code></pre>
+                  <pre class="highlight"><code><span class="kd">protocol</span> <span class="kt">ErrorType</span></code></pre>
 
                 </div>
               </div>
-            <p>A type that support <code>NSURLSession</code> initialization.</p>
-
+            
           </section>
           <section class="section task-group-section">
             <div class="task-group">
@@ -104,9 +103,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FP12LHSDKCoreKit20LHURLSessionProtocol16createURLSessionFT_CSo12NSURLSession"></a>
-                    <a name="//apple_ref/swift/Method/createURLSession()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FP12LHSDKCoreKit20LHURLSessionProtocol16createURLSessionFT_CSo12NSURLSession">createURLSession()</a>
+                    <a name="/s:FE12LHSDKCoreKitPs9ErrorType11NSErrorCopyFGSqGVs10DictionaryCSo8NSObjectPs9AnyObject___CSo7NSError"></a>
+                    <a name="//apple_ref/swift/Method/NSErrorCopy(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE12LHSDKCoreKitPs9ErrorType11NSErrorCopyFGSqGVs10DictionaryCSo8NSObjectPs9AnyObject___CSo7NSError">NSErrorCopy(_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -114,20 +113,41 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Generate an custom <code>NSURLSession</code> object without any dependency.</p>
+                        <p>Convert an <code><a href="../Extensions/ErrorType.html">ErrorType</a></code> to an new <code>NSError</code> instance</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">createURLSession</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">NSURLSession</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="kt">NSErrorCopy</span><span class="p">(</span><span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">NSObject</span> <span class="p">:</span> <span class="kt">AnyObject</span><span class="p">]?)</span> <span class="o">-&gt;</span> <span class="kt">NSError</span></code></pre>
 
                         </div>
                       </div>
                       <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>userInfo</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Arbitrary data.</p>
+<p>Swift <code>ErrorType</code> can&rsquo;t store arbitrary data as <code>NSError</code> does. With this parameter, caller can provide optional data for the newly created <code>NSError</code> instance.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
                         <h4>Return Value</h4>
-                        <p>An <code>NSURLSession</code> instance.</p>
+                        <p>An <code>NSError</code> instance</p>
 
                       </div>
                     </section>

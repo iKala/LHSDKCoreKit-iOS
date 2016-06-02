@@ -14,7 +14,7 @@
     <a title="LHURLRequestProtocol Protocol Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">LHSDKCoreKit Docs</a> (61% documented)</p>
+        <p><a href="../index.html">LHSDKCoreKit Docs</a> (100% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -36,6 +36,9 @@
               <li class="nav-group-task">
                 <a href="../Classes/LHFrontEndAPIClient.html">LHFrontEndAPIClient</a>
               </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LHMessageAPIClient.html">LHMessageAPIClient</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -48,10 +51,21 @@
                 <a href="../Enums/LHFrontEndAPIError.html">LHFrontEndAPIError</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Enums/LHMessageAPIError.html">LHMessageAPIError</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Enums/LHURLRequestError.html">LHURLRequestError</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/LHURLResponseError.html">LHURLResponseError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/ErrorType.html">ErrorType</a>
               </li>
             </ul>
           </li>
@@ -81,7 +95,7 @@
 
                 </div>
               </div>
-            <p>A type that support NSURLRequest initialization &amp; serialization</p>
+            <p>A type that support <code>NSURLRequest</code> initialization &amp; serialization.</p>
 
           </section>
           <section class="section task-group-section">
@@ -90,9 +104,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FP12LHSDKCoreKit20LHURLRequestProtocol16createURLRequestFzTSS4hostCSo5NSURL8endpointSS10parametersGSqPs9AnyObject__15timeoutIntervalSd_CSo12NSURLRequest"></a>
-                    <a name="//apple_ref/swift/Method/createURLRequest(_:host:endpoint:parameters:timeoutInterval:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FP12LHSDKCoreKit20LHURLRequestProtocol16createURLRequestFzTSS4hostCSo5NSURL8endpointSS10parametersGSqPs9AnyObject__15timeoutIntervalSd_CSo12NSURLRequest">createURLRequest(_:host:endpoint:parameters:timeoutInterval:)</a>
+                    <a name="/s:FP12LHSDKCoreKit20LHURLRequestProtocol16createQueryItemsFGSawx16LHQueryParamType_GSaCSo14NSURLQueryItem_"></a>
+                    <a name="//apple_ref/swift/Method/createQueryItems(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FP12LHSDKCoreKit20LHURLRequestProtocol16createQueryItemsFGSawx16LHQueryParamType_GSaCSo14NSURLQueryItem_">createQueryItems(_:)</a>
                     </code>
                       <span class="declaration-note">
                         Default implementation
@@ -103,26 +117,180 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Create an NSURLRequest for given information</p>
+                        <p>Create an array of query objects from a query parameter collection.</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        <p>Create an array of query objects from a query parameter collection.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">createQueryItems</span><span class="p">(</span><span class="nv">queryParams</span><span class="p">:</span> <span class="p">[</span><span class="kt">LHQueryParamType</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">NSURLQueryItem</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>queryParams</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Query parameters, type of parameter is provided by the conforming type.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A collection of <code>NSURLQueryItem</code>.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FP12LHSDKCoreKit20LHURLRequestProtocol9createURLFzT4hostCSo5NSURL8endpointSS10queryItemsGSaCSo14NSURLQueryItem__S1_"></a>
+                    <a name="//apple_ref/swift/Method/createURL(host:endpoint:queryItems:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FP12LHSDKCoreKit20LHURLRequestProtocol9createURLFzT4hostCSo5NSURL8endpointSS10queryItemsGSaCSo14NSURLQueryItem__S1_">createURL(host:endpoint:queryItems:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create an <code>NSURL</code> from components.</p>
 
 <div class="aside aside-throws">
     <p class="aside-title">Throws</p>
-    <p>An LHAPIError object is thrown if it can&rsquo;t generate valid URL</p>
-
-<p>An NSError object if error happened when encoding parameters</p>
+    <p>An <code><a href="../Enums/LHURLRequestError.html">LHURLRequestError</a></code> is thrown if it can&rsquo;t generate valid URL.</p>
 
 </div>
 
                       </div>
                       <h4>Default Implementation</h4>
                       <div class="default_impl abstract">
-                        <p>Create an NSURLRequest for given information</p>
+                        <p>Create an <code>NSURL</code> from components.</p>
 
 <div class="aside aside-throws">
     <p class="aside-title">Throws</p>
-    <p>An LHAPIError object is thrown if it can&rsquo;t generate valid URL</p>
+    <p>An <code>LHURLRequestError</code> is thrown if it can&rsquo;t generate valid URL.</p>
 
-<p>An NSError object if error happened when encoding parameters</p>
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">createURL</span><span class="p">(</span><span class="n">host</span> <span class="nv">host</span><span class="p">:</span> <span class="kt">NSURL</span><span class="p">,</span> <span class="nv">endpoint</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">queryItems</span><span class="p">:</span> <span class="p">[</span><span class="kt">NSURLQueryItem</span><span class="p">])</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">NSURL</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>host</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Server host of the request.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>endpoint</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>URL request path.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>queryItems</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>URL request query collection.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An <code>NSURL</code> instance</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FP12LHSDKCoreKit20LHURLRequestProtocol16createURLRequestFzTSS3URLCSo5NSURL7payloadGSqPs9AnyObject__7headersGVs10DictionarySSSS_15timeoutIntervalSd_CSo12NSURLRequest"></a>
+                    <a name="//apple_ref/swift/Method/createURLRequest(_:URL:payload:headers:timeoutInterval:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FP12LHSDKCoreKit20LHURLRequestProtocol16createURLRequestFzTSS3URLCSo5NSURL7payloadGSqPs9AnyObject__7headersGVs10DictionarySSSS_15timeoutIntervalSd_CSo12NSURLRequest">createURLRequest(_:URL:payload:headers:timeoutInterval:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create an <code>NSURLRequest</code> for URL. And customize it with given information.</p>
+
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <p>An <code>NSError</code> if error happened when encoding parameters.</p>
+
+</div>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        <p>Create an <code>NSURLRequest</code> for URL. And customize it with given information.</p>
+
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <p>An <code>NSError</code> if error happened when encoding parameters.</p>
 
 </div>
 
@@ -147,7 +315,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>HTTP method of the request</p>
+                                  <p>HTTP method of the request.</p>
 
                                 </div>
                               </td>
@@ -155,12 +323,12 @@
                             <tr>
                               <td>
                                 <code>
-                                <em>host</em>
+                                <em>URL</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>Server host of the request</p>
+                                  <p>URL for request.</p>
 
                                 </div>
                               </td>
@@ -168,12 +336,12 @@
                             <tr>
                               <td>
                                 <code>
-                                <em>endpoint</em>
+                                <em>payload</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>URL request path</p>
+                                  <p>Payload to be sent in POST or PUT request.</p>
 
                                 </div>
                               </td>
@@ -181,12 +349,12 @@
                             <tr>
                               <td>
                                 <code>
-                                <em>parameters</em>
+                                <em>headers</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>Data to be sent in POST or PUT request</p>
+                                  <p>Additional header field &amp; value collection. </p>
 
                                 </div>
                               </td>
@@ -209,7 +377,7 @@
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>An NSURLRequest instance</p>
+                        <p>An <code>NSURLRequest</code> instance.</p>
 
                       </div>
                     </section>
@@ -220,8 +388,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2016 <a class="link" href="https://livehouse.in" target="_blank" rel="external">LIVEhouse.in</a>. All rights reserved. (Last updated: 2016-05-05)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.6.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2016 <a class="link" href="https://livehouse.in" target="_blank" rel="external">LIVEhouse.in</a>. All rights reserved. (Last updated: 2016-06-02)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.6.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>
